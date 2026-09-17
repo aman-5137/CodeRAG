@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .models import QueryRequest, ImpactRequest
 from .indexer import CodeIndexer
-from .rag import RAGEngine
+from ..rag import RAGEngine
 from .evaluator import evaluate_retrieval
 
 BASE_DIR = Path(__file__).resolve().parent.parent
